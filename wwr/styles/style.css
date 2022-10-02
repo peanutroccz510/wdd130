@@ -1,4 +1,10 @@
-
+body {
+    background-color: aqua;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
 body, header {
     background-color: rgb(91, 180, 209);
     max-width: 1600px;
@@ -9,19 +15,40 @@ body, header {
 header {
     background-color:rgb(255, 255, 255)
 }
+.home-title {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+.book {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    margin-top: 50px;  
+}
+.join {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    margin-top: 50px;
+}
+.msg p {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    background-color:rgb(113, 5, 134);
+    line-height: 1.5em;
+}
 .logo {
-    width: 80 px
+    width: 80px;
 }
 .icon {
     width: 50px;
 }
 .card-img {
-    width: 400px
+    border: 10px solid #1202fa;
 }
 nav a{
     width: 30%;
     height: 30%;
-    margin: 40px auto;
+    padding: 35px;
 }
 nav a:hover {
     background-color: white;
@@ -40,24 +67,36 @@ nav a:hover {
     text-align: center;
 }
 .book {
-    background-color:rgb(113, 5, 134)
+    background-color:rgb(113, 5, 134);
+    padding: 15px 30px;
 }
 .book:hover {
-    background-color:rgb(252, 144, 4)
+    background-color:rgb(252, 144, 4);
+}
+.book, .join {
+    padding: 15px 30px;
+    margin-top: 50px;
+    font-size: 18px;
+    color: black;
+    background-color:rgb(253, 0, 0);
+    border-radius: 5px;
 }
 .join:hover {
-    background-color:rgb(243, 19, 206) 
+    background-color:rgb(243, 19, 206) ;
 }
 main section {
     text-align: center;
 }
+main section img {
+    box-sizing: border-box;
+}
 h1 {
     color: rgb(0, 0, 0);
     margin-left: 20px;
-
 }
 h2 {
-    color:rgb(237, 253, 4)
+    color:rgb(237, 253, 4);
+    margin: 0;
 }
 img class {
     width: 35%;
@@ -78,11 +117,17 @@ nav, footer {
     color: white;
     padding: 10px;
 }
-footer p {
-    text-size: 1.2em;    
+footer p {  
+    padding: 25px 50px; 
 }
 footer p a:hoover {
     text-align: center;
-    color:rgb(252, 144, 4)
-    text-decoration: underline
+    color:rgb(252, 144, 4);
+    text-decoration: underline;
+}
+footer .social img {
+    padding-top: 15px;
+}
+footer {
+    margin-top: 50px;
 }
