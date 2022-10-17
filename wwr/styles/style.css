@@ -1,16 +1,20 @@
 body {
     background-color: rgb(149, 150, 150);
-    font-family: Raleway, Arial, sans-serif;
+    font-family: 'Rock Salt', Arial, sans-serif;
     font-size: 22px;
     margin: 0;
     padding: 0;
 }
 body, header {
     background-color: rgb(91, 180, 209);
-    max-width: 1600px;
-    text-align: center;
     margin: 0 auto
+    font-family: Rock Salt, Arial, Helvetica, sans-serif;
+}
 
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: 'raleway', Arial, Helvetica, sans-serif;
 }
 header {
     background-color:rgb(0, 0, 0);
@@ -35,7 +39,7 @@ header {
 .msg p {
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
     font-size: 2em;
-    background-color:rgb(113, 5, 134);
+    background-color:rgb(252, 252, 252);
     line-height: 1.5em;
 }
 .logo {
@@ -64,13 +68,16 @@ nav {
     justify-content: space-around;
 }
 nav a{
-    
+    color:aliceblue;
     display: flex;
     justify-content: space-around;
+    text-decoration: none;
+    font-size: 14px;
 }
 nav a:hover {
-    background-color: white;
-    color: rgb(9, 6, 207);
+    background-color: rgb(229, 255, 0);
+    color: rgb(255, 255, 255);
+    
 }
 #hero-msg h1{
     text-align: center;
@@ -85,8 +92,8 @@ nav a:hover {
     grid-row: 1/2;
     margin-top: 100px;
 }
-.hero-img {
-    width: 450px
+#hero-img {
+    width: 100%;
 }
 #hero {
     display: grid;
@@ -102,22 +109,22 @@ nav a:hover {
     text-align: center;
 }
 .book {
-    background-color:rgb(113, 5, 134);
+    background-color:rgb(235, 252, 1);
     padding: 15px 30px;
 }
 .book:hover {
-    background-color:rgb(252, 144, 4);
+    background-color:rgb(255, 255, 255);
 }
 .book, .join {
     padding: 15px 30px;
     margin-top: 50px;
     font-size: 18px;
     color: black;
-    background-color:rgb(113, 5, 134);
+    background-color:rgb(235, 252, 1);
     border-radius: 5px;
 }
 .join:hover {
-    background-color:rgb(252, 144, 4) ;
+    background-color:rgb(255, 255, 255) ;
 }
 .home-grid {
     display: grid;
@@ -130,11 +137,12 @@ main section img {
     box-sizing: border-box;
 }
 .card-img, .mountains {
-    width: 100%;
+    width: 80%;
 }
 .rivers-card {
     grid-column: 2/4;
     grid-row: 2/3;
+
 }
 .camping-card {
     display: grid;
@@ -147,16 +155,20 @@ main section img {
     grid-row: 2/3;
 }
 #background {
+    background-color: rgb(187, 187, 187);
+    height: 200px;
     grid-column: 1/11;
     grid-row: 4/9;
+    margin-top: 10%;
 }
 
 .msg {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     padding: 35px;
     grid-column: 6/10;
     grid-row: 6/7;
-    box-shadow: 5px 5px 10px #e6b411
+    box-shadow: 5px 5px 10px #e6b411;
+    font-size: 12px;
 }
 .mountains {
     grid-column: 2/7;
@@ -179,7 +191,9 @@ img class {
 img class {
     width: 35%;
 }
-
+#home-title {
+    font-family: 'Lato', Courier, monospace;
+}
 .img-class {
     width: 35%;
 }
