@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clipper Step-by-Steps</title>
+    <link type="text/css" rel="stylesheet" href="styles/styles.css">
 <header>
         <a id="c_logo" href="index.html"> 
             <img class="logo" src="images/clipperkblogo.jpg" alt="clipperkblogo">
@@ -20,21 +21,54 @@
 <h4>Clipper Step-by-Steps</h4>
 <img class="steps" src="images/stepsonetofour.jpg" alt="stepbysteps">
 <p>Choose from any of the processes from the list, to click and view the full step by step and process for the selected item.</p>
-<section class=
 
-<main class="pagetwo">
-    <div class="Balance Transfers"> 
-        <h3>Balance Transfers</h3>
+    </div>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Manual Balance Transfer')" id="defaultOpen">Manual Balance Transfer</button>
+        <button class="tablinks" onclick="openCity(event, 'Manual Refund Request')">Manual Refund Requests</button>
+        <button class="tablinks" onclick="openCity(event, 'Manual Replacement Request')">Manual Replacement Request</button>
+      </div>
+      
+      <div id="Manual Balance Transfer" class="tabcontent">
+        <h3>Manual Balance Transfer</h3>
         <p>1. Open the Clipper CSN in Pivotal.</p>
         <p>2. Click "New Incident"</p>
         <p>3. In the Description Box, type in the texter "pivbt"</p>
-                Be sure to fill out all the information in the texter.
-        <p>4. In the Resolution Box, type in "date/time stamp and initials with a note of what was advised to the patron and what action was taken."
-        </p>
-
-
-    </div>
-
+        <p>Be sure to fill out all the information in the texter.</p>
+        <p>4. In the Resolution Box, type in "date/time stamp and initials with a note of what was advised to the patron and what action was taken."</p>
+      </div>
+      
+      <div id="Manual Refund Request" class="tabcontent">
+        <h3>Manual Refund Requests</h3>
+        <p>This process takes place in Pivotal, on the card of the product we are refunding.</p> 
+      </div>
+      
+      <div id="Manual Replacement Request" class="tabcontent">
+        <h3>Manual Replacement Requests</h3>
+        <p>This process take place in pivotal, on the OLD card that needs to be replaced.</p>
+      </div>
+      
+      <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
+         
+      </body>
+      
 </main>
 
 
