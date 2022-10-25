@@ -124,6 +124,17 @@ footer a:hover {
     padding: 10px;
     font-size: 12px;
 }
+
+/*Page Two Stepbysteps*/
+
+.steps {
+    width: 15%;
+    margin-left: 3em;
+}
+titleone {
+    text-align: center;
+}
+
 /* Style the tab */
 
 tab {
@@ -141,7 +152,7 @@ body {font-family: "Lato", sans-serif;}
     background-color: #000;
     color: white;
     padding: 18px 16px;
-    width: 15%;
+    width: 20%;
     border: 1px solid #427aa1;
     outline: none;
     text-align: left;
@@ -167,7 +178,11 @@ body {font-family: "Lato", sans-serif;}
     border: 1px solid #a1683a;
     width: 40%;
     border-left: none;
-    height: 300px;
+    height: 210px;
     font-size: 12px;
     color: #ffffff;
+    margin-left: 20%;
+    margin-top: -14%;
+
   }
+
