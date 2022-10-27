@@ -28,8 +28,83 @@
     
 </head>
 <body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {box-sizing: border-box}
+        body {font-family: "Lato", sans-serif;}
+</style>
+</head>
 
+    <h2>Video Tutorials - How to Ride Transit</h2>
+    <p>Click on any video below to learn how to ride on each form of transportation:</p>
+    
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'BUS') "id="defaultOpen">BUS</button>
+        <button class="tablinks" onclick="openCity(event, 'FERRY')">FERRY</button>
+        <button class="tablinks" onclick="openCity(event, 'RAIL')">RAIL</button>
+        <button class="tablinks" onclick="openCity(event, 'TRAIN')">TRAIN</button>
+        <button class="tablinks" onclick="openCity(event, 'SHIP')">SHIP</button>
+        <button class="tablinks" onclick="openCity(event, 'BOAT')">BOAT</button>
+      </div>
+      
+      <div id="BUS" class="tabcontent">
+        <h3>How to Ride the Bus</h3>
+        <iframe width="300" height="225" src="https://www.youtube.com/embed/JpMvH2UerNg" title="Metro Transit: How to Ride the Bus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="two"><iframe width="300" height="225" src="https://www.youtube.com/embed/JpMvH2UerNg" title="Metro Transit: How to Ride the Bus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <p></p>
+        <iframe width="300" height="225" src="https://www.youtube.com/embed/JpMvH2UerNg" title="Metro Transit: How to Ride the Bus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="four"><iframe width="300" height="225" src="https://www.youtube.com/embed/JpMvH2UerNg" title="Metro Transit: How to Ride the Bus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
+      </div>
+      
+      <div id="FERRY" class="tabcontent">
+        <h3>How to Ride FERRY</h3>
+        <p>This is coming soon</p> 
+      </div>
+      
+      <div id="RAIL" class="tabcontent">
+        <h3>How to Ride Rail</h3>
+        <p>This is coming soon.</p>
+      </div>
+
+      <div id="TRAIN" class="tabcontent">
+        <h3>How to Ride TRAIN</h3>
+        <p>This is coming soon.</p>
+      </div>
+
+      <div id="SHIP" class="tabcontent">
+        <h3>How to Ride SHIP</h3>
+        <p>This is coming soon.</p>
+      </div>
+
+      <div id="BOAT" class="tabcontent">
+        <h3>How to Ride BOAT</h3>
+        <p>This is coming soon.</p>
+      </div>
+    
+
+      <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
+         
+      
+    
 
 <footer>
     <h3>Clipperkb &copy; 2022 - Penina Fa'afiu</h3>

@@ -1,7 +1,7 @@
 body {
     background-color: #427aa1;
-    font-family: 'Rock Salt', Arial, sans-serif;
-    font-size: 22px;  
+    font-family: Lato, Arial, Helvetica, sans-serif;
+      
 }
 
 #content {
@@ -22,6 +22,7 @@ nav{
     color: #151e3f;
     justify-content: space-around;
     display: flex;
+    font-family: IM Fell French Canon SC, 'Times New Roman', Times, serif;
     
     
 }
@@ -42,6 +43,7 @@ h1{
     display: block;
     text-align: center;
     margin: 0 auto;
+    font-family: IM Fell French Canon SC, 'Times New Roman', Times, serif;
 
 }
 .logo {
@@ -54,7 +56,7 @@ h1{
     display: inline-block;
     margin: 0 auto;
     border: none;
-    width: 33%;
+    width: 27%;
 }
 .book-knowledge {
     width: 100%;
@@ -65,6 +67,8 @@ h1{
 .homequestion {
     text-align: center;
     clear: both;
+    font-size: 24px;
+    font-family: 'IM Fell French Cannon', 'Lucida Sans', Arial, Helvetica, sans-serif;
 }
 .welcome {
     font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -90,11 +94,15 @@ h1{
 .answer {
     text-align: center;
     margin-left: 3em;
+    font-size: 20px;
+    font-family: Lato, Arial, Helvetica, sans-serif;
 }
 
 .instructions{
     text-align: center;
     margin-left: 3em;
+    font-size: 20px;
+    font-family: Lato, Arial, Helvetica, sans-serif;
 }
 .choose {
     padding: 5%;
@@ -145,6 +153,22 @@ footer a:hover {
     margin-top: -15%;
 }
 
+#BUS {
+    border: 3px white solid;
+    height: 50em;
+    
+    
+}
+.two {
+    margin-top: -19em;
+    margin-left: 30em;
+}
+.four {
+    margin-left: 30em;
+    margin-top: -19em;
+
+}
+
 /* Style the tab */
 
 tab {
@@ -152,6 +176,7 @@ tab {
     border: 3px solid #fff;
     background-color: #000000;
     width: 50%;
+
 
 }
 * {box-sizing: border-box}
@@ -197,7 +222,7 @@ body {
     border: 3px solid #a1683a;
     width: 50%;
     border-left: none;
-    height: 30em;
+    height: 40em;
     font-size: 12px;
     color: #ffffff;
     margin-left: 35%;
